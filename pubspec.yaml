@@ -5,8 +5,8 @@ author:
 homepage:
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
-  flutter: ">=1.10.0"
+  sdk: ">=2.17.0 <4.0.0" # Updated Dart SDK constraint
+  flutter: ">=3.0.0" # Updated Flutter SDK constraint
 
 dependencies:
   flutter:
@@ -36,6 +36,8 @@ flutter:
         pluginClass: FlutterNodePlugin
       macos:
         pluginClass: FlutterNodePlugin
+      windows:
+        pluginClass: FlutterNodePluginCApi # Use C API for Windows
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
